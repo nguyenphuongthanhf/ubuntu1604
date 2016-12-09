@@ -19,5 +19,4 @@ RUN echo "alias ll='ls -alh'" >> /etc/bash.bashrc && \
     mv /etc/localtime /etc/localtime.bk && \
     ln -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
 RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common python-software-properties vim wget curl unzip
-
+    DEBIAN_FRONTEND=noninteractive apt-get install -y sudo software-properties-common python-software-properties vim wget curl unzip
